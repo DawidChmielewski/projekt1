@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+header{
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+.icon {
+    height: 4rem;
+    width: 4rem;
+    margin: 10px;
+}
+*{
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+h1:first-child{
+    font-size: 2rem;
+    background: #121FCF;
+    background: linear-gradient(to right, #3640ff 20%, #CF1D6A 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    justify-content: center;
+    float: left;
+}
+a, a>h1:hover{
+    box-shadow:rgb(129, 0, 56) 20px;
+}
+main{
+    position: absolute;
+    height: 60vh;
+    width: 100vh;
+    top: 50%;
+    left: 50%;
+    margin-top: -30vh; /* Połowa wysokości */
+    margin-left: -50vh; /* Połowa szerokości */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0b0b0b;
+    border-radius: 30px;
+    box-shadow: 0 0 80px 50px #0011ff50;
+}
+main>h2{
+    font-size: 50px;
+    text-align: right;
+    background: #0b0b0b;
+    letter-spacing: 2px;
+}
+form{
+    margin-left: -20px;
+    width: 50vh;
+    font-size: 30px;
+    background: #0b0b0b;
+    align-items: center;
+    text-align: center;
+}
+label, input{
+    display: inline-block;
+    vertical-align: middle;
+    background: #0b0b0b;
+    letter-spacing: 3px;
+    color: white;
+    margin-bottom: 2rem;
+    
+}
+input{
+    transition: all ease-in-out 1s;
+    border-radius: 5px;
+    color: #757eff
+}
+
+form > button{
+    margin-top: 40px;
+    font-size: 30px;
+    width: 50%;
+    height: 55px;
+    transition: all ease-in-out 0.2s;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    border: solid 2px #ffffff; 
+    background: #000000;
+    color: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+}
+form > button:hover{
+    border: solid 2px #2e2e2e; 
+    background: #ffffff;
+    color: #757eff;
+}
+.logout> .btn-logout{
+    font-size: 20px;
+    width: 20vh;
+    height: 55px;
+    transition: all ease-in-out 0.2s;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    border: solid 2px #ffffff; 
+    background: #ff000051;
+    color: white;
+    border-radius: 50px;
+    float: right;
+    text-align: center;
+    margin-right: -80rem;
+}
+.logout> .btn-logout:hover{
+    background-color: #ff000098;
+    background: #ff000098;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 9999;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    cursor: pointer;
+  }
+  
